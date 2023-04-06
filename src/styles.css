@@ -1,0 +1,18 @@
+:root{
+    --background: #212529;
+    --background-hover: #16191c;
+    --main-color: #87FF65;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    color: var(--white);
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: var(--background);
+}

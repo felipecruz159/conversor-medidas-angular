@@ -1,0 +1,8 @@
+<div class="container">
+    <div class="row text-center justify-content-center">
+        <div [routerLink]="['/converter', {type: option.text}]" class="col-sm-3 card-option" *ngFor="let option of options">
+            <img src="{{option.image}}" alt="{{option.text}}">
+            <p>{{option.text}}</p>
+        </div>
+    </div>
+</div>

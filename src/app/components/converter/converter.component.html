@@ -1,0 +1,28 @@
+<div class="mt-5 ms-3">
+    <a routerLink="/">
+        <img src="assets/arrow_back_white_24dp.svg" alt="">
+    </a>
+</div>
+<h1 class="mt-5 text-center mb-4">Conversor de medidas</h1>
+<div class="container-fluid bg-danger-subtle">
+    <p class="text-danger text-center mb-5">{{converter.errorMessage}}</p>
+</div>
+<div class="container">
+    <div class="row d-flex text-center">
+        <div class="col-sm-3 select">
+            <select class="form-select m-auto" [(ngModel)]="selectedOption" (change)="onChangeSelect()">
+                <option disabled selected hidden>{{selectedOption}}</option>
+                <option *ngFor="let option of options" [value]="option">{{option}}</option>
+            </select>
+
+        </div>
+        <div class="col-sm-9 converter">
+            <label for="number">{{converter.measurementInput}}</label>
+            <input type="number" class="form-control" name="number" [(ngModel)]="numberToBeConverted"
+                (keyup)="validateNumber($event)">
+
+            <label for="result">Resultado</label>
+            <input type="number" class="form-control" name="result" [(ngModel)]="result">
+        </div>
+    </div>
+</div>
