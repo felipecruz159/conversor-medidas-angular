@@ -97,8 +97,7 @@ export class Converter {
             'Minutos para Segundos',
             'Minutos para Horas',
             'Horas para Segundos',
-            'Horas para Minutos',
-            'Horas para Dias',
+            'Horas para Minutos'
         ];
     }
 
